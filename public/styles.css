@@ -1,8 +1,35 @@
 body {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  color: purple;
+  background-image: url("http://i.imgur.com/CMWTqJx.jpg?1");
+}
+
+header {
+  margin-top: 1em;
 }
 
 img {
   width : 5em;
+}
+
+nav {
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  margin: auto;
+}
+
+label {
+  margin-top: 1em;
+}
+
+a {
+  color: red;
 }
 
 .container {
@@ -11,9 +38,18 @@ img {
 }
 
 .student {
-  width: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 15em;
   margin: 1em;
   border-color: black;
   border-style: solid;
-  justify-items: center;
+  border-radius: 1em;
+  align-items: center;
+  padding: 1em;
+}
+
+.submit {
+  margin: auto;
+  margin-top: 2em;
 }
