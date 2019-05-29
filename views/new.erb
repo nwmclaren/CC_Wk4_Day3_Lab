@@ -6,13 +6,9 @@
   <label for="age">Age : </label>
   <input type="number"id="age"name="age" min=10 max=18>
   <label for="house">House :</label>
-  <select id="house" name="house">
-  <option value="Griffindor">Griffindor</option>
-  <option value="Hufflepuff">Hufflepuff</option>
-  <option value="Slytherin">Slytherin</option>
-  <option value="Ravenclaw">Ravenclaw</option>
-  <input type="submit" value="Create Student"> 
-
-
-
+  <select id="house" name="house_id">
+  <% for house in @houses %>
+  <option value="<%= house.id %>"><%= house.name %></option>
+  <% end %>
+  <input type="submit" value="Create Student">
 </form>

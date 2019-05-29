@@ -1,7 +1,11 @@
 <h2> Student List </h2>
+<div class="container">
 <% for student in @students%>
+<div class="student">
 <p>Name: <%=student.first_name %> <%=student.last_name %></p>
 <p>Age: <%=student.age %></p>
-<p>House: <%=student.house %></p>
-<hr />
+<p>House: <%=student.house.name %></p>
+<img src=<%=student.house.logo%> />
+</div>
 <% end %>
+</div>

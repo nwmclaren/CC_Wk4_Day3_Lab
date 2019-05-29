@@ -1,0 +1,19 @@
+body {
+}
+
+img {
+  width : 5em;
+}
+
+.container {
+  display : flex;
+  flex-wrap: wrap;
+}
+
+.student {
+  width: 20%;
+  margin: 1em;
+  border-color: black;
+  border-style: solid;
+  justify-items: center;
+}
